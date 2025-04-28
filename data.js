@@ -47,27 +47,27 @@ const recentMatches = [
 const upcomingSchedule = [
   {
     id: 1,
-    date: '2025-04-28',
+    date: '2025-04-29',
     time: '14:00-22:00',
-    sport: 'Carrom',
+    sport: 'Chess',
     department1: 'civil',
     department2: 'civil',
     venue: '107'
   },
   {
     id: 2,
-    date: '2025-04-28',
+    date: '2025-04-29',
     time: '14:00-22:00',
-    sport: 'Carrom',
+    sport: 'Chess',
     department1: 'mechanical',
     department2: 'mechanical',
     venue: '107'
   },
   {
     id: 3,
-    date: '2025-04-28',
+    date: '2025-04-29',
     time: '14:00-22:00',
-    sport: 'Carrom',
+    sport: 'Chess',
     department1: 'electrical',
     department2: 'electrical',
     venue: '107'
