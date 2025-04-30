@@ -8,7 +8,7 @@
     id: 'civil',
     name: 'Civil',
     color: '#e53e3e', // Red
-    points: 80,
+    points: 230,
     wins: 0,
     losses: 0
   },
@@ -16,7 +16,7 @@
     id: 'mechanical',
     name: 'Mechanical',
     color: '#3b82f6', // Light blue
-    points: 100,
+    points: 200,
     wins: 0,
     losses: 0
   },
@@ -24,7 +24,7 @@
     id: 'electrical',
     name: 'Electrical',
     color: '#10b981', // Light green
-    points: 50,
+    points: 230,
     wins: 0,
     losses: 0
   }
