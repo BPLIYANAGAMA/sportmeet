@@ -32,14 +32,37 @@
 
 // Recent matches data
 const recentMatches = [
-  {
+   {
     id: 1,
-    date: '2025-05-15',
-    sport: 'Football',
-    department1: 'electrical',
-    department2: 'civil',
+    date: '2025-04-30',
+    sport: 'Womens Table Tennis',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
+    winner: 'electrical',
+    score: 'Electrical 50 - Civil 20 - Mechanical 30' // Score format for three departments
+  },
+   {
+    id: 2,
+    date: '2025-04-30',
+    sport: 'Womens Chess',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
     winner: 'civil',
-    score: 'Mechanical 35 Points'
+    score: 'Electrical 30 - Civil 50 - Mechanical 20' // Score format for three departments
+  },
+   {
+    id: 3,
+    date: '2025-04-30',
+    sport: 'Womens Carrom',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
+    winner: 'electrical',
+    score: 'Electrical 100 - Civil 80 - Mechanical 50' // Score format for three departments
+  },
+   {
+    id: 4,
+    date: '2025-04-29',
+    sport: 'Male Carrom',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
+    winner: 'mechanical',
+    score: 'Electrical 50 - Civil 80 - Mechanical 100' // Score format for three departments
   },
 ];
 
@@ -47,29 +70,19 @@ const recentMatches = [
 const upcomingSchedule = [
   {
     id: 1,
-    date: '2025-04-29',
-    time: '14:00-22:00',
-    sport: 'Chess',
-    department1: 'civil',
-    department2: 'civil',
-    venue: '107'
+    date: '2025-05-02',
+    time: '13:00-18:00',
+    sport: 'Cricket',
+    departments: ['civil', 'electrical', 'mechanical'], // Supports three departments
+    venue: 'Ground'
   },
   {
     id: 2,
-    date: '2025-04-29',
-    time: '14:00-22:00',
-    sport: 'Chess',
-    department1: 'mechanical',
-    department2: 'mechanical',
-    venue: '107'
+    date: '2025-05-02',
+    time: '13:00-22:00',
+    sport: 'Badmintton Finals',
+    departments: ['civil', 'electrical', 'mechanical'], // Supports three departments
+    venue: 'Ground'
   },
-  {
-    id: 3,
-    date: '2025-04-29',
-    time: '14:00-22:00',
-    sport: 'Chess',
-    department1: 'electrical',
-    department2: 'electrical',
-    venue: '107'
-  },
+  
 ];
