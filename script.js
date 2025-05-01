@@ -148,9 +148,7 @@ function renderRecentMatches() {
   recentMatchesContainer.innerHTML = '';
   
   recentMatches.forEach(match => {
-    const dept1 = findDepartment(match.department1);
-    const dept2 = findDepartment(match.department2);
-    const winner = findDepartment(match.winner);
+    const departments = match.departments.map(deptId => findDepartment(deptId));
     
     const matchCard = document.createElement('div');
     matchCard.className = 'match-card';
@@ -161,17 +159,14 @@ function renderRecentMatches() {
         <span>${formatDate(match.date)}</span>
       </div>
       <div class="match-vs">
-        <div class="department-badge" style="background-color: ${dept1.color}20;">
-          <div class="dept-color" style="background-color: ${dept1.color}"></div>
-          <span>${dept1.name}</span>
-          ${match.winner === dept1.id ? '<span class="winner-badge">WINNER</span>' : ''}
-        </div>
-        <span class="vs-text">VS</span>
-        <div class="department-badge" style="background-color: ${dept2.color}20;">
-          <div class="dept-color" style="background-color: ${dept2.color}"></div>
-          <span>${dept2.name}</span>
-          ${match.winner === dept2.id ? '<span class="winner-badge">WINNER</span>' : ''}
-        </div>
+        ${departments.map((dept, index) => `
+          <div class="department-badge" style="background-color: ${dept.color}20;">
+            <div class="dept-color" style="background-color: ${dept.color}"></div>
+            <span>${dept.name}</span>
+            ${match.winner === dept.id ? '<span class="winner-badge">WINNER</span>' : ''}
+          </div>
+          ${index < departments.length - 1 ? '<span class="vs-text">VS</span>' : ''} <!-- Add VS text -->
+        `).join('')}
       </div>
       <div class="match-score">${match.score}</div>
     `;
@@ -185,8 +180,7 @@ function renderSchedule() {
   upcomingScheduleContainer.innerHTML = '';
   
   upcomingSchedule.forEach(event => {
-    const dept1 = findDepartment(event.department1);
-    const dept2 = findDepartment(event.department2);
+    const departments = event.departments.map(deptId => findDepartment(deptId));
     
     const scheduleCard = document.createElement('div');
     scheduleCard.className = 'schedule-card';
@@ -197,15 +191,13 @@ function renderSchedule() {
         <span>${formatDate(event.date)} - ${event.time}</span>
       </div>
       <div class="schedule-vs">
-        <div class="department-badge" style="background-color: ${dept1.color}20;">
-          <div class="dept-color" style="background-color: ${dept1.color}"></div>
-          <span>${dept1.name}</span>
-        </div>
-        <span class="vs-text">VS</span>
-        <div class="department-badge" style="background-color: ${dept2.color}20;">
-          <div class="dept-color" style="background-color: ${dept2.color}"></div>
-          <span>${dept2.name}</span>
-        </div>
+        ${departments.map((dept, index) => `
+          <div class="department-badge" style="background-color: ${dept.color}20;">
+            <div class="dept-color" style="background-color: ${dept.color}"></div>
+            <span>${dept.name}</span>
+          </div>
+          ${index < departments.length - 1 ? '<span class="vs-text">VS</span>' : ''} <!-- Add VS text -->
+        `).join('')}
       </div>
       <div class="venue">
         <strong>Venue:</strong> ${event.venue}
