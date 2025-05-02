@@ -8,30 +8,46 @@
     id: 'civil',
     name: 'Civil',
     color: '#e53e3e', // Red
-    points: 800,
+    points: 900,
     wins: 6,
-    losses: 8
+    losses: 10
   },
   {
     id: 'mechanical',
     name: 'Mechanical',
     color: '#3b82f6', // Light blue
-    points: 810,
-    wins: 5,
+    points: 960,
+    wins: 7,
     losses: 9
   },
   {
     id: 'electrical',
     name: 'Electrical',
     color: '#10b981', // Light green
-    points: 700,
+    points: 780,
     wins: 3,
-    losses: 11
+    losses: 13
   }
 ];
 
 // Recent matches data
 const recentMatches = [
+{
+    id: 1,
+    date: '2025-05-02',
+    sport: 'Male Badminton duo',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
+    winner: 'mechanical',
+    score: 'Electrical 50 - Civil 80 - Mechanical 100' // Score format for three departments
+  },
+{
+    id: 1,
+    date: '2025-05-02',
+    sport: 'Male Badminton',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
+    winner: 'mechanical',
+    score: 'Electrical 30 - Civil 20 - Mechanical 50' // Score format for three departments
+  },
 {
     id: 1,
     date: '2025-05-02',
