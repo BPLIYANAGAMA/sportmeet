@@ -8,25 +8,25 @@
     id: 'civil',
     name: 'Civil',
     color: '#e53e3e', // Red
-    points: 500,
-    wins: 4,
-    losses: 5
+    points: 620,
+    wins: 5,
+    losses: 6
   },
   {
     id: 'mechanical',
     name: 'Mechanical',
     color: '#3b82f6', // Light blue
-    points: 410,
-    wins: 2,
-    losses: 7
+    points: 510,
+    wins: 3,
+    losses: 8
   },
   {
     id: 'electrical',
     name: 'Electrical',
     color: '#10b981', // Light green
-    points: 380,
+    points: 490,
     wins: 3,
-    losses: 6
+    losses: 8
   }
 ];
 
@@ -35,13 +35,29 @@ const recentMatches = [
 {
     id: 1,
     date: '2025-05-01',
+    sport: 'Female Badminton',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
+    winner: 'mechanical',
+    score: 'Electrical 30 - Civil 20 - Mechanical 50' // Score format for three departments
+  },
+{
+    id: 2,
+    date: '2025-05-01',
+    sport: 'Male Volleyball',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
+    winner: 'civil',
+    score: 'Electrical 80 - Civil 100 - Mechanical 50' // Score format for three departments
+  },
+{
+    id: 3,
+    date: '2025-05-01',
     sport: 'Female Volleyball',
     departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
     winner: 'civil',
     score: 'Electrical 50 - Civil 100 - Mechanical 80' // Score format for three departments
   },
 {
-    id: 2,
+    id: 4,
     date: '2025-05-01',
     sport: 'Shot Put Male',
     departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
@@ -49,7 +65,7 @@ const recentMatches = [
     score: 'Electrical 30 - Civil 70 - Mechanical 00' // Score format for three departments
   },
 {
-    id: 3,
+    id: 5,
     date: '2025-05-01',
     sport: 'Shot Put Female',
     departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
@@ -57,7 +73,7 @@ const recentMatches = [
     score: 'Electrical 00 - Civil 30 - Mechanical 70' // Score format for three departments
   },
 {
-    id: 4,
+    id: 6,
     date: '2025-05-01',
     sport: 'TT Single Male',
     departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
@@ -65,7 +81,7 @@ const recentMatches = [
     score: 'Electrical 50 - Civil 20 - Mechanical 30' // Score format for three departments
   },
 {
-    id: 5,
+    id: 7,
     date: '2025-05-01',
     sport: 'Chess Male',
     departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
@@ -73,7 +89,7 @@ const recentMatches = [
     score: 'Electrical 20 - Civil 50 - Mechanical 30' // Score format for three departments
   },
    {
-    id: 6,
+    id: 8,
     date: '2025-04-30',
     sport: 'Womens Table Tennis',
     departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
@@ -81,7 +97,7 @@ const recentMatches = [
     score: 'Electrical 50 - Civil 20 - Mechanical 30' // Score format for three departments
   },
    {
-    id: 7,
+    id: 9,
     date: '2025-04-30',
     sport: 'Womens Chess',
     departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
@@ -89,7 +105,7 @@ const recentMatches = [
     score: 'Electrical 30 - Civil 50 - Mechanical 20' // Score format for three departments
   },
    {
-    id: 8,
+    id: 10,
     date: '2025-04-30',
     sport: 'Womens Carrom',
     departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
@@ -97,7 +113,7 @@ const recentMatches = [
     score: 'Electrical 100 - Civil 80 - Mechanical 50' // Score format for three departments
   },
    {
-    id: 9,
+    id: 11,
     date: '2025-04-29',
     sport: 'Male Carrom',
     departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
