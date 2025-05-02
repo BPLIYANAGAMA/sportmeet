@@ -8,30 +8,38 @@
     id: 'civil',
     name: 'Civil',
     color: '#e53e3e', // Red
-    points: 750,
-    wins: 5,
+    points: 800,
+    wins: 6,
     losses: 8
   },
   {
     id: 'mechanical',
     name: 'Mechanical',
     color: '#3b82f6', // Light blue
-    points: 710,
+    points: 810,
     wins: 5,
-    losses: 8
+    losses: 9
   },
   {
     id: 'electrical',
     name: 'Electrical',
     color: '#10b981', // Light green
-    points: 620,
+    points: 700,
     wins: 3,
-    losses: 10
+    losses: 11
   }
 ];
 
 // Recent matches data
 const recentMatches = [
+{
+    id: 1,
+    date: '2025-05-02',
+    sport: 'Male TT duo',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
+    winner: 'mechanical',
+    score: 'Electrical 80 - Civil 50 - Mechanical 100' // Score format for three departments
+  },
 {
     id: 1,
     date: '2025-05-02',
