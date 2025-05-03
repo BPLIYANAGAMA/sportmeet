@@ -10,28 +10,36 @@ const departments = [
     color: '#e53e3e', // Red
     points: 900,
     wins: 6,
-    losses: 10
+    losses: 11
   },
   {
     id: 'mechanical',
     name: 'Mechanical',
     color: '#3b82f6', // Light blue
-    points: 960,
-    wins: 7,
+    points: 1090,
+    wins: 8,
     losses: 9
   },
   {
     id: 'electrical',
     name: 'Electrical',
     color: '#10b981', // Light green
-    points: 780,
+    points: 880,
     wins: 3,
-    losses: 13
+    losses: 14
   }
 ];
 
 // Recent matches data
 const recentMatches = [
+{
+    id: 1,
+    date: '2025-05-03',
+    sport: 'Male Cricket',
+    departments: ['electrical', 'civil', 'mechanical'], // Supports three departments
+    winner: 'mechanical',
+    score: 'Electrical 100 - Civil 00 - Mechanical 130' // Score format for three departments
+  },
 {
     id: 1,
     date: '2025-05-02',
