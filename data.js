@@ -230,7 +230,6 @@ const djPartyDetails = {
   theme: "Neon Glow",
   specialEffects: [
     "Laser Light Show",
-    "Smoke Machines",
     "LED Dance Floor"
   ],
   restrictions: "Everyone must Participate at 7:30"
