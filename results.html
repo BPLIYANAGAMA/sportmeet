@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Results - Sports Meet</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Inter Department Sports Meet <span>2025</span></h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="results.html" class="active">All Match Results</a></li>
+          <li><a href="thanks.html">Thanks</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="results-page">
+      <div class="container">
+        <h2 class="section-title">All Match Results</h2>
+        
+        <div class="filter-controls">
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search by sport...">
+          </div>
+          
+          <div class="department-filters">
+            <h3>Filter by Department</h3>
+            <div class="filter-buttons">
+              <button class="filter-btn active" data-department="all">All</button>
+              <button class="filter-btn" data-department="civil">Civil</button>
+              <button class="filter-btn" data-department="mechanical">Mechanical</button>
+              <button class="filter-btn" data-department="electrical">Electrical</button>
+            </div>
+          </div>
+          
+          <div class="matchup-filter">
+            <h3>Filter by Matchup</h3>
+            <select id="matchup-select">
+              <option value="all">All Matchups</option>
+              <option value="civil-mechanical">Civil vs Mechanical</option>
+              <option value="civil-electrical">Civil vs Electrical</option>
+              <option value="mechanical-electrical">Mechanical vs Electrical</option>
+              <option value="civil-mechanical-electrical">Civil vs Mechanical vs Electrical</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="results-grid" id="results-grid">
+          <!-- Match results will be inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Developed By HNDE Media Committee with Bimsara Liyanagama(34th batch).</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="js/results.js"></script>
+</body>
+</html>
