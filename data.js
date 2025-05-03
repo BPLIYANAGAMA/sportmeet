@@ -9,7 +9,7 @@
     name: 'Civil',
     color: '#e53e3e', // Red
     points: 900,
-    wins: 7,
+    wins: 6,
     losses: 10
   },
   {
@@ -17,7 +17,7 @@
     name: 'Mechanical',
     color: '#3b82f6', // Light blue
     points: 960,
-    wins: 8,
+    wins: 7,
     losses: 9
   },
   {
