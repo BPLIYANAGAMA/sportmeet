@@ -3,7 +3,7 @@
 // You can manually modify this file to update scores, matches, etc.
 
 // Department data with colors, points, and statistics
- const departments = [
+const departments = [
   {
     id: 'civil',
     name: 'Civil',
@@ -161,7 +161,6 @@ const recentMatches = [
     score: 'Electrical 50 - Civil 80 - Mechanical 100' // Score format for three departments
   },
 ];
-
 // Upcoming schedule data
 const upcomingSchedule = [
   {
@@ -180,5 +179,51 @@ const upcomingSchedule = [
     departments: ['civil', 'electrical', 'mechanical'], // Supports three departments
     venue: 'Ground'
   },
-  
 ];
+
+// Thanks data for the thank you page
+const thanksData = [
+  { name: "President", role: "HNDE Student Associaton" },
+  { name: "Coordinator", role: "Sports Committee" },
+  { name: "Coordinator", role: "Media Committee" },
+  { name: "Members", role: "Sports Committee" },
+  { name: "Members", role: "Media Committee" },
+  { name: "Students of All Batches", role: "All Batches" },
+  { name: "Bimsara Liyanagama(34th Batch)", role: "Web Developer" },
+];
+
+// Ceremony Details
+const ceremonyDetails = {
+  date: "May 3th, 2025",
+  time: "2:00 PM",
+  venue: "HNDE Play Ground",
+  chiefGuest: "Director General of SLIATE",
+  agenda: [
+    { time: "2:00 PM-2:10 PM", event: "Lighting the Oil Lamp" },
+    { time: "2:10 PM-2:12 PM", event: "2 Minutes Silence" },
+    { time: "2:12 PM-2:15 PM", event: "Siging the Anthem of the Student Heroes" },
+    { time: "2:10 PM-2:15 PM", event: "Sub Secretary's Speach" },
+    { time: "2:15 PM-2:20 PM", event: "Speach of the Director General" },
+    { time: "2:20 PM-2:25 PM", event: "Speach of the Director" },
+    { time: "2:25 PM-2:30 PM", event: "Speach of the President of HNDESA" },
+    { time: "2:25 PM-2:30 PM", event: "Speach of the Demonstrator" },
+    { time: "2:30 PM-3:10 PM", event: "Certificate Awarding" },
+    { time: "3:10 PM-3:15 PM", event: "Thank you Speach by the Coordinator of Sport Committee" },
+    { time: "3:15 PM-3:15 PM", event: "End of the Ceremony" },
+  ]
+};
+
+// DJ Party Details
+const djPartyDetails = {
+  date: "May 3th, 2025",
+  time: "7:30 PM",
+  venue: "HNDE Play Ground",
+  dj: "DJ Rhythm Master",
+  theme: "Neon Glow",
+  specialEffects: [
+    "Laser Light Show",
+    "Smoke Machines",
+    "LED Dance Floor"
+  ],
+  restrictions: "Everyone must Participate at 7:30"
+};
