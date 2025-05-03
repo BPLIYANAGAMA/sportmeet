@@ -1,102 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-.button {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-
-.button1 {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.button1 {border-radius: 4px;}
-</style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HNDE Inter-Department Sports Scoreboard</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Sports Meet Finals</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Chart.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <div class="logo">
-        <div class="logo-image">
-          <img src="logo4.png" alt="Stickman" width="100" height="125">
-        </div>
-        <h1>INTER DEPARTMENT SPORTS MEET 2025</h1>
-      </div>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Inter Department Sports Meet <span>2025</span></h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="results.html">All Match Results</a></li>
+          <li><a href="thanks.html">Thanks</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <button class="tab-btn active" data-tab="standings">Standings</button>
-      <button class="tab-btn" data-tab="chart">Points Chart</button>
-      <button class="tab-btn" data-tab="matches">Recent Matches</button><!--when updating recent matches type matches inside of perali koma-->
-      <button class="tab-btn" data-tab="schedule">Schedule</button>
-	  <a href="https://drive.google.com/file/d/19T7rtDtDQPsFf6hn9BS94VFtT2R2s7Li/view" target="_blank">
-	  <button class="button button1">Rules</button></a>
-    </nav>
   </header>
 
   <main>
-    <section id="standings" class="tab-content active">
-      <h2>Current Standings</h2>
-      <div class="standings-container">
-        <table class="standings-table">
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Department</th>
-              <th>Points</th>
-              <th>Wins</th>
-              <th>Losses</th>
-            </tr>
-          </thead>
-          <tbody id="standings-body">
-            <!-- Populated by JavaScript -->
-          </tbody>
-        </table>
+    <section class="hero">
+      <div class="container">
+        <h2 class="section-title">Current Standings</h2>
+        <p class="section-subtitle">Sports Meet Championship 2025</p>
+        
+        <div class="departments-grid" id="departments-grid">
+          <!-- Department cards will be inserted here by JavaScript -->
+        </div>
+
+        <div class="chart-container">
+          <canvas id="pointsChart"></canvas>
+        </div>
       </div>
     </section>
 
-    <section id="chart" class="tab-content">
-      <h2>Department Points</h2>
-      <div class="chart-container">
-        <canvas id="departmentChart"></canvas>
+    <section class="recent-matches">
+      <div class="container">
+        <h2 class="section-title">Recent Matches</h2>
+        <div class="matches-grid" id="recent-matches-grid">
+          <!-- Recent matches will be inserted here by JavaScript -->
+        </div>
       </div>
     </section>
 
-    <section id="matches" class="tab-content">
-      <h2>Recent Matches</h2>
-      <div class="matches-container" id="recent-matches">
-        <!-- Populated by JavaScript -->
+    <section class="ceremony">
+      <div class="container">
+        <h2 class="section-title">Closing Ceremony</h2>
+        <div class="ceremony-details" id="ceremony-details">
+          <!-- Ceremony details will be inserted here by JavaScript -->
+        </div>
       </div>
     </section>
 
-    <section id="schedule" class="tab-content">
-      <h2>Upcoming Schedule</h2>
-      <div class="schedule-container" id="upcoming-schedule">
-        <!-- Populated by JavaScript -->
+    <section class="dj-party">
+      <div class="container">
+        <h2 class="section-title">DJ Party</h2>
+        <div class="dj-details" id="dj-details">
+          <!-- DJ party details will be inserted here by JavaScript -->
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>HNDE Inter-Department Sports Meet 2025</p>
-    <p>© Developed By HNDE Media Committee with Bimsara Liyanagama (34th Batch)</p>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Developed By HNDE Media Committee with Bimsara Liyanagama(34th batch).</p>
+    </div>
   </footer>
 
   <script src="data.js"></script>
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
