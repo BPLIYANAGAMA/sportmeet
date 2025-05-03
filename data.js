@@ -17,7 +17,7 @@
     name: 'Mechanical',
     color: '#3b82f6', // Light blue
     points: 960,
-    wins: 7,
+    wins: 8,
     losses: 9
   },
   {
