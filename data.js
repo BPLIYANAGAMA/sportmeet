@@ -9,7 +9,7 @@
     name: 'Civil',
     color: '#e53e3e', // Red
     points: 900,
-    wins: 7,
+    wins: 6,
     losses: 10
   },
   {
